@@ -1,0 +1,12 @@
+[package]
+name    = "DropChain"
+version = "1.0.0"
+authors = []
+
+[addresses]
+file_share = "_"   # replaced at publish time with your deployer address
+
+[dependencies.AptosFramework]
+git      = "https://github.com/aptos-labs/aptos-core.git"
+rev      = "main"
+subdir   = "aptos-move/framework/aptos-framework"
