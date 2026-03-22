@@ -1,0 +1,22 @@
+# deps
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+frontend/.next/
+frontend/out/
+
+# env
+.env.local
+.env*.local
+
+# Vercel
+.vercel
+
+# Move build artifacts
+move/build/
+
+# OS
+.DS_Store
+Thumbs.db
