@@ -1,0 +1,95 @@
+.page   { padding: 40px 20px 80px; }
+.header { max-width: 680px; margin: 0 auto 28px; }
+.title  { font-family: var(--font-display); font-weight: 800; font-size: 2rem; letter-spacing: -.03em; margin-bottom: 8px; }
+.sub    { font-size: .9rem; color: var(--muted); }
+.wrap   { max-width: 680px; margin: 0 auto; }
+
+.cidRow { display: flex; gap: 10px; margin-bottom: 20px; }
+.cidInput {
+  flex: 1; background: rgba(255,255,255,.04); border: 1px solid var(--border);
+  border-radius: 10px; color: var(--text); font-family: var(--font-mono); font-size: .85rem;
+  padding: 12px 16px; outline: none; transition: border .2s;
+}
+.cidInput:focus { border-color: var(--cyan); }
+.fetchBtn {
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  border: none; color: #000; font-family: var(--font-display); font-weight: 700;
+  font-size: .82rem; padding: 12px 22px; border-radius: 10px; cursor: pointer;
+  transition: opacity .2s; white-space: nowrap; letter-spacing: .04em;
+}
+.fetchBtn:hover:not(:disabled) { opacity: .85; }
+.fetchBtn:disabled { opacity: .5; cursor: not-allowed; }
+
+.errorBanner {
+  background: rgba(255,71,87,.07); border: 1px solid rgba(255,71,87,.2);
+  border-radius: 10px; padding: 14px 18px;
+  font-family: var(--font-mono); font-size: .8rem; color: var(--red);
+  margin-bottom: 16px;
+}
+
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 16px; overflow: hidden;
+  animation: fadeUp .3s ease;
+}
+.cardHeader {
+  padding: 20px 24px; border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 14px;
+}
+.cardIcon {
+  width: 44px; height: 44px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center; font-size: 1.3rem;
+  background: linear-gradient(135deg, rgba(0,229,255,.15), rgba(123,47,190,.15));
+  border: 1px solid rgba(0,229,255,.1); flex-shrink: 0;
+}
+.cardName { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; margin-bottom: 3px; }
+.cardCid  { font-family: var(--font-mono); font-size: .72rem; color: var(--muted); word-break: break-all; }
+.cardBody { padding: 20px 24px; }
+
+.metaGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+.metaCell {
+  background: rgba(255,255,255,.025); border: 1px solid var(--border);
+  border-radius: 9px; padding: 12px 14px;
+}
+.metaCellLabel {
+  font-family: var(--font-mono); font-size: .67rem; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--muted); margin-bottom: 5px;
+}
+.metaCellVal { font-family: var(--font-mono); font-size: .82rem; }
+
+.decryptSection { margin-top: 20px; }
+.decryptSection label {
+  display: block; font-family: var(--font-mono); font-size: .73rem;
+  text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin-bottom: 8px;
+}
+.decryptRow { display: flex; gap: 8px; }
+.decryptInput {
+  width: 100%; background: rgba(255,255,255,.04); border: 1px solid var(--border);
+  border-radius: 9px; color: var(--text); font-family: var(--font-body); font-size: .9rem;
+  padding: 10px 14px; outline: none; transition: border .2s;
+}
+.decryptInput:focus { border-color: var(--cyan); }
+
+.downloadBtn {
+  width: 100%; margin-top: 14px; padding: 13px; border-radius: 10px; border: none; cursor: pointer;
+  font-family: var(--font-display); font-weight: 700; font-size: .88rem; letter-spacing: .04em;
+  background: linear-gradient(135deg, var(--cyan), var(--purple)); color: #000; transition: all .2s;
+}
+.downloadBtn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,229,255,.2); }
+.downloadBtn:disabled { opacity: .4; cursor: not-allowed; transform: none; }
+
+.accessLog {
+  margin-top: 20px; padding: 14px 16px;
+  background: rgba(255,255,255,.02); border: 1px solid var(--border); border-radius: 10px;
+}
+.logTitle {
+  font-family: var(--font-mono); font-size: .7rem; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--muted); margin-bottom: 10px;
+}
+.logEntry {
+  display: flex; justify-content: space-between;
+  font-family: var(--font-mono); font-size: .72rem;
+  padding: 5px 0; border-bottom: 1px solid var(--border); color: var(--muted);
+}
+.logEntry:last-child { border: none; }
+.logEvent { color: var(--text); }
